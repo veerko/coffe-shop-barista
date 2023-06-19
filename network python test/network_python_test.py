@@ -5,7 +5,7 @@ from ast import If
 
 name = ""
 #this variable will show a list of active drinks, note we will use this to save the info for the barista
-coffelist = "latte coffees , black coffees , milk coffees , "
+coffelist = "Black coffee,Espresso,Latte\n"
 #build a AI barista
 
 #print the first word the barista will say
@@ -21,8 +21,9 @@ if name == "shinno":
     if evil_status == "yes":
        print ("you are not welcome here get out!")
        exit(0)
-else:
-      print ("hello " + name + (" what would you like to order?"))
+
+
+    print ("hello " + name + (" what would you like to order?"))
 
 # added a + so the barista will repeat the name you entered 
 #print ("hello " + name + (" what would you like to order?"))
@@ -31,7 +32,7 @@ print ("can i see your list")
 
 
 #the input does so we can type in to the barista what coffe we want
-coffelist = input ("here is our list: " + coffelist )
+coffelist = input ("here is our list:\n" + coffelist )
 
 #
 #print (" ")
@@ -43,9 +44,14 @@ quantity = input("How many coffees would you like? \n")
 
 #shows the quantity+ what coffee we ordered
 print (" " + quantity + coffelist)
-price = 5
+price = input
+if coffelist == "Latte":
+    price = 12
+if coffelist == "Black coffee":
+    price = 7
 #this variable price does take the price and quantity/how many coffes and multiplies that by the price
 total = price * int(quantity)
+
 #the barista will store the data and output it here, 
 #the str is just since we are trying to multiplie a nummber and a word so thats why you have to add a str before the total, other wise it wont work since python cant use/multiplie a str and a int
 print ("Thank you, your total is: €" + str(total))
