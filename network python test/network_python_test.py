@@ -10,34 +10,26 @@ coffelist = "Black coffee,Espresso,Latte\n"
 
 #print the first word the barista will say
 
-print ("hello welcome to st1kos coffe shop")
+print ("Hello welcome to st1ko's coffe shop")
 
 #use the variable to get the barista to let you input the name you want
 
-name = input ("what is your name?\n")
+name = input ("What is your name?\n")
 
 if name == "shinno":
-    evil_status = input ("are you evil\n")
+    evil_status = input ("Are you evil\n")
     if evil_status == "yes":
-       print ("you are not welcome here get out!")
+       print ("You are not welcome here get out!")
        exit(0)
 
 
-    print ("hello " + name + (" what would you like to order?"))
+    print ("Hello " + name + (" What would you like to order?"))
 
-# added a + so the barista will repeat the name you entered 
-#print ("hello " + name + (" what would you like to order?"))
-
-print ("can i see your list")
+print ("Can i see your list?")
 
 
 #the input does so we can type in to the barista what coffe we want
-coffelist = input ("here is our list:\n" + coffelist )
-
-#
-#print (" ")
-
-#will take the info we just typed for the barista and print it out 
+coffelist = input ("Here is our list:\n" + coffelist )
 
 #quantity how how many coffees we get
 quantity = input("How many coffees would you like? \n")
@@ -45,21 +37,17 @@ quantity = input("How many coffees would you like? \n")
 #shows the quantity+ what coffee we ordered
 print (" " + quantity + coffelist)
 price = input
+
+#set price for coffee
 if coffelist == "Latte":
     price = 12
 if coffelist == "Black coffee":
     price = 7
 if coffelist == "Espresso":
     price = 10
-#this variable price does take the price and quantity/how many coffes and multiplies that by the price
+
 total = price * int(quantity)
 
-#the barista will store the data and output it here, 
-#the str is just since we are trying to multiplie a nummber and a word so thats why you have to add a str before the total, other wise it wont work since python cant use/multiplie a str and a int
+#the barista will store the data/prices and output it here 
 print ("Thank you, your total is: €" + str(total))
 
-
-
-#int ("alright coming up soon")
-#print ("your coffe is ready " + name)
-#rint ("thank you")
