@@ -46,6 +46,7 @@ elif coffelist == "Black coffee":
 elif coffelist == "Espresso":
     price = 10
 else: print ("sorry we dont have that")
+price = 0
 total = price * int(quantity)
 
 #the barista will store the data/prices and output it here 
