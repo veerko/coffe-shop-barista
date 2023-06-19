@@ -17,11 +17,12 @@ print ("hello welcome to st1kos coffe shop")
 name = input ("what is your name?\n")
 
 if name == "shinno":
-    print ("you are not welcome here get out")
-    exit(0)
+    evil_status = input ("are you evil\n")
+    if evil_status == "yes":
+       print ("you are not welcome here get out!")
+       exit(0)
 else:
- print ("hello " + name + (" what would you like to order?"))
-
+      print ("hello " + name + (" what would you like to order?"))
 
 # added a + so the barista will repeat the name you entered 
 #print ("hello " + name + (" what would you like to order?"))
