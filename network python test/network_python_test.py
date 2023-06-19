@@ -35,19 +35,18 @@ coffelist = input ("Here is our list:\n" + coffelist )
 quantity = input("How many coffees would you like? \n")
 
 #shows the quantity+ what coffee we ordered
-print (" " + quantity + coffelist)
-price = input
+print (""+ quantity  + coffelist)
+
 
 #set price for coffee
 if coffelist == "Latte":
     price = 12
-if coffelist == "Black coffee":
+elif coffelist == "Black coffee":
     price = 7
-if coffelist == "Espresso":
+elif coffelist == "Espresso":
     price = 10
-
+else: print ("sorry we dont have that")
 total = price * int(quantity)
 
 #the barista will store the data/prices and output it here 
 print ("Thank you, your total is: €" + str(total))
-
