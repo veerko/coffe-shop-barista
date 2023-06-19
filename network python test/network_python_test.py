@@ -20,6 +20,7 @@ if name == "shinno" or name == "mtfy" or name == "dani":
     
     evil_status = input ("Are you evil\n")
     good_deeds = int(input("how many good deeds have you done today?\n"))
+    #if evil yes then if good deeds more or 4 you are allowed to entry
     if evil_status == "yes" and good_deeds < 4:
        print ("You are not welcome here," + name + ",get out!")
        exit(0)
