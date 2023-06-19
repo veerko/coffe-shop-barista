@@ -49,6 +49,8 @@ if coffelist == "Latte":
     price = 12
 if coffelist == "Black coffee":
     price = 7
+if coffelist == "Espresso":
+    price = 10
 #this variable price does take the price and quantity/how many coffes and multiplies that by the price
 total = price * int(quantity)
 
