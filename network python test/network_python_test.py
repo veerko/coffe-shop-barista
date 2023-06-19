@@ -2,7 +2,7 @@
 
 name = ""
 #this variable will show a list of active drinks, note we will use this to save the info for the barista
-coffelist = "latte , black, milk, "
+coffelist = "latte coffees , black coffees , milk coffees , "
 #build a AI barista
 
 #print the first word the barista will say
@@ -14,15 +14,26 @@ print ("hello welcome to st1kos coffe shop")
 name = input ("what is your name?\n")
 # added a + so the barista will repeat the name you entered 
 print ("hello " + name + (" what would you like to order?"))
-print ("what do you guys have")
+print ("can i see your list")
 #here you see the print option but instead we are going to use coffelist input
 #print ("here is our list " + coffelist)
 #the input does so we can type in to the barista what coffe we want
 
-coffelist = input ("here is our list" + coffelist )
+coffelist = input ("here is our list: " + coffelist )
+
+
 
 #will take the info we just typed for the barista and print it out 
-print ("I will take a " + coffelist)
-print ("alright coming up soon")
-print ("your coffe is ready " + name)
-print ("thank you")
+
+quantity = input("How many coffees would you like? \n")
+
+print (" " + quantity + coffelist)
+price = 5
+total = price * int(quantity)
+print ("Thank you, your total is: " + str(total))
+
+
+
+#int ("alright coming up soon")
+#print ("your coffe is ready " + name)
+#rint ("thank you")
