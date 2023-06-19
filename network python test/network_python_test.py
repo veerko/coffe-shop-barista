@@ -17,14 +17,15 @@ print ("Hello welcome to st1ko's coffe shop")
 name = input ("What is your name?\n")
 
 if name == "shinno" or name == "mtfy" or name == "dani":
+    
     evil_status = input ("Are you evil\n")
-    if evil_status == "yes":
+    good_deeds = int(input("how many good deeds have you done today?\n"))
+    if evil_status == "yes" and good_deeds < 4:
        print ("You are not welcome here," + name + ",get out!")
        exit(0)
 
-
     print ("Hello " + name + (" What would you like to order?"))
-
+ 
 print ("Can i see your list?")
 
 
