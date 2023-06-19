@@ -16,10 +16,10 @@ print ("Hello welcome to st1ko's coffe shop")
 
 name = input ("What is your name?\n")
 
-if name == "shinno":
+if name == "shinno" or name == "mtfy":
     evil_status = input ("Are you evil\n")
     if evil_status == "yes":
-       print ("You are not welcome here get out!")
+       print ("You are not welcome here," + name + ",get out!")
        exit(0)
 
 
