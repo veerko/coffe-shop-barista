@@ -10,14 +10,13 @@ coffelist = "Black coffee,Espresso,Latte\n"
 
 #print the first word the barista will say
 
-print ("Hello welcome to st1ko's coffe shop")
+print ("Hello welcome to st1koo's coffe shop")
 
 #use the variable to get the barista to let you input the name you want
 
 name = input ("What is your name?\n")
 
 if name == "shinno" or name == "mtfy" or name == "dani":
-    
     evil_status = input ("Are you evil\n")
     good_deeds = int(input("how many good deeds have you done today?\n"))
     #if evil yes then if good deeds more or 4 you are allowed to entry
